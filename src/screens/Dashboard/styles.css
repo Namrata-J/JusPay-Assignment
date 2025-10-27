@@ -1,0 +1,10 @@
+.dashboard-sidebar__header {
+  gap: 0.7rem;
+  padding: 2rem 1.5rem;
+}
+
+.dashboard-sidebar__content {
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1.5rem;
+}

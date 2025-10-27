@@ -89,7 +89,7 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
       dark: green[900],
     },
     grey: {
-      50: "#fafafa",
+      50: "#FFFFFF33",
       100: "#f5f5f5",
       200: "#eeeeee",
       300: "#e0e0e0",
@@ -143,8 +143,8 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
           }
         : {
             background: {
-              default: "#1d1d1a",
-              paper: "#000000",
+              default: "#1C1C1C",
+              paper: "#1C1C1C",
             },
             primary: {
               light: "#c49d51",
@@ -158,7 +158,7 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
             },
             text: {
               primary: "#ffffff",
-              secondary: "#ffffff",
+              secondary: "#FFFFFF66",
               disabled: "#ffffff",
             },
             accent: {
@@ -231,10 +231,14 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
       },
     },
     typography: {
-      fontFamily: '"Space Mono", "Sora", monospace, sans-serif',
+      fontFamily: '"Space Mono", "Sora", "Inter", monospace, sans-serif',
       h1: {
         fontWeight: 700,
         fontFamily: '"Sora", sans-serif',
+      },
+      h5: {
+        fontWeight: 400,
+        fontFamily: '"Inter", sans-serif',
       },
       subtitle1: {
         fontFamily: '"Space Mono", monospace',

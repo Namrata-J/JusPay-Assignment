@@ -1,12 +1,12 @@
-.App {
+.homepage {
   background: #171717;
   height: 100vh;
-  background-image: url("./assets/homepage_bg.png");
+  background-image: url("../../assets/homepage_bg.png");
   overflow: hidden;
   position: relative;
 }
 
-.App img {
+.homepage img {
   height: 70vh;
   position: absolute;
   top: 1rem;

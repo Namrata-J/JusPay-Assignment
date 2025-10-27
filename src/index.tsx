@@ -3,6 +3,7 @@ import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 import { CombinedProvider } from "./providers/CombinedProvider";
 
 const root = ReactDOM.createRoot(
@@ -10,9 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <CombinedProvider>
-      <App />
-    </CombinedProvider>
+    <BrowserRouter>
+      <CombinedProvider>
+        <App />
+      </CombinedProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
