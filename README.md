@@ -50,3 +50,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Dashboard
 - Order List
 Check video walkthrough here [Assignment](https://www.loom.com/share/ba946bd64f4447fd8dcf74400b483b6d).
+Code walkthrough [Code](https://www.loom.com/share/1efddf2ceb3f4df78f8082fdc157151b)
