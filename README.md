@@ -49,4 +49,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Landing Page
 - Dashboard
 - Order List
-Check video walkthrough here [[Assignment](https://reactjs.org/](https://www.loom.com/share/ba946bd64f4447fd8dcf74400b483b6d)).
+Check video walkthrough here [Assignment](https://www.loom.com/share/ba946bd64f4447fd8dcf74400b483b6d).
