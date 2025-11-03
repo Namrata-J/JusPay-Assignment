@@ -14,7 +14,7 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      <img src={matrix} alt='matrix image' />
+      <img src={matrix} alt="" />
       <div
         className="homepage__content"
         style={{
