@@ -1,6 +1,6 @@
 import { useState } from "react";
 import TabPanel from "@mui/lab/TabPanel";
-import { Box, Tab, Tabs } from "@mui/material";
+import { Box, Tab } from "@mui/material";
 import { TabContext, TabList } from "@mui/lab";
 import { useTheme } from "@mui/material/styles";
 import { FavoritesSectionProps } from "./favouritesSection.types";

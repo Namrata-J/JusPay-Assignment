@@ -1,7 +1,6 @@
+import { Box } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import ListIcon from "@mui/icons-material/List";
-import SearchIcon from "@mui/icons-material/Search";
-import { Box, InputBase, Paper } from "@mui/material";
 import { flexWithStart } from "../../../utils/styles";
 import { IconBtn } from "../../atoms/iconBtn/IconBtn";
 import { SearchInput } from "../../atoms/searchInput/SearchInput";

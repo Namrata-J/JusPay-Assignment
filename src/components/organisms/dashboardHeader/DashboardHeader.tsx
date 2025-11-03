@@ -2,9 +2,6 @@ import "./styles.css";
 import {
   AppBar,
   Box,
-  IconButton,
-  InputBase,
-  Paper,
   Toolbar,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
