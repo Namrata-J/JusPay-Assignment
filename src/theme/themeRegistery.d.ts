@@ -7,6 +7,7 @@ declare module "@mui/material/styles" {
       secondary?: string;
       main?: string;
     };
+    blueGrey: PaletteColorOptions;
   }
 
   interface PaletteOptions {
@@ -15,5 +16,6 @@ declare module "@mui/material/styles" {
       secondary?: string;
       main?: string;
     };
+    blueGrey?: PaletteColorOptions;
   }
 }

@@ -13,6 +13,7 @@ const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
   recently,
   dashboards,
   pages,
+  openSidebar
 }) => {
   const { convertPxWidthToVh } = useThemeRegistery();
   const drawerWidth = convertPxWidthToVh(212);
@@ -25,7 +26,7 @@ const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
   return (
     <Drawer
       sx={{
-        width: drawerWidth,
+        width: openSidebar ? drawerWidth : 0,
         flexShrink: 0,
         "& .MuiDrawer-paper": {
           width: drawerWidth,
@@ -34,7 +35,7 @@ const DashboardSidebar: React.FC<DashboardSidebarProps> = ({
       }}
       variant="persistent"
       anchor="left"
-      open={true}
+      open={openSidebar}
     >
       <UserHeader />
       <div

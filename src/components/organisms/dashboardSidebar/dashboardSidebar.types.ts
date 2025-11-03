@@ -7,4 +7,5 @@ export interface DashboardSidebarProps {
     name: string;
     subList?: string[];
   }>;
+  openSidebar: boolean;
 }

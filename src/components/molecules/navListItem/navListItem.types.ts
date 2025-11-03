@@ -5,4 +5,6 @@ export interface NavListItemProps {
   paddingLeft?: number;
   openItem: string;
   showExpandIcon: boolean;
+  isRightBarContent?: boolean;
+  subText?: string;
 }

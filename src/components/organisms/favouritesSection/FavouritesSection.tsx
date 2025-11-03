@@ -5,12 +5,14 @@ import { TabContext, TabList } from "@mui/lab";
 import { useTheme } from "@mui/material/styles";
 import { FavoritesSectionProps } from "./favouritesSection.types";
 import { FavoritesTab } from "../../molecules/favouritesTab/FavouritesTab";
+import { useThemeRegistery } from "../../../theme/ThemeRegistery";
 
 const FavoritesSection: React.FC<FavoritesSectionProps> = ({
   favourites,
   recently,
 }) => {
   const theme = useTheme();
+  const { mode } = useThemeRegistery();
   const [value, setValue] = useState("1");
 
   const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
@@ -21,9 +23,10 @@ const FavoritesSection: React.FC<FavoritesSectionProps> = ({
     padding: "0 0.1rem 0 0",
     fontWeight: 400,
     fontFamily: '"Inter", sans-serif',
-    color: "#FFFFFF33",
+    color: mode === "light" ? theme.palette.grey[500] : theme.palette.grey[300],
     "&.Mui-selected": {
-      color: theme.palette.text.secondary,
+      color:
+        mode === "light" ? theme.palette.grey[600] : theme.palette.grey[300],
     },
   };
 

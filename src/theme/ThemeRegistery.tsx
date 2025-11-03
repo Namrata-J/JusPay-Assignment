@@ -33,8 +33,8 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
     height: number | null;
     width: number | null;
   }>({
-    height: null,
-    width: null,
+    width: window.innerWidth,
+          height: window.innerHeight,
   });
 
   useEffect(() => {
@@ -65,8 +65,6 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
     [mode]
   );
 
-  if (!mode || !windowDimensions.height || !windowDimensions.width) return null;
-
   const sharedPalette = {
     error: {
       light: red[400],
@@ -89,17 +87,22 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
       dark: green[900],
     },
     grey: {
-      50: "#FFFFFF33",
-      100: "#f5f5f5",
-      200: "#eeeeee",
-      300: "#e0e0e0",
-      400: "#bdbdbd",
-      500: "#9e9e9e",
-      600: "#757575",
-      700: "#555555",
-      800: "#292929",
-      900: "#111111",
+      50: "#ffffff0d",
+      100: "#ffffff1a",
+      200: "#ffffff33",
+      300: "#ffffff66",
+      400: '#1c1c1c0d',
+      500: '#1c1c1c1a',
+      600: "#1c1c1c33",
+      700: "#1c1c1c66",
     },
+    blueGrey: {
+      50: "#E3F5FF",
+      100: '#F7F9FB',
+      200: '#A8C5DA',
+      300: "#E5ECF6",
+      400: '#A8C5DA80'
+    }
   };
 
   const convertPxHeightToVh = (pxVal: number): string => {
@@ -118,7 +121,7 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
       ...(mode === "light"
         ? {
             background: {
-              default: "#FFFDF6",
+              default: "#ffffff",
               paper: "#ffffff",
             },
             primary: {
@@ -135,8 +138,8 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
               main: "#889E73",
             },
             text: {
-              primary: "#171717",
-              secondary: "#4a4a4a",
+              primary: "#1C1C1C",
+              secondary: "#1C1C1C66",
               disabled: "#9e9e9e",
             },
             ...sharedPalette,
@@ -144,22 +147,22 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
         : {
             background: {
               default: "#1C1C1C",
-              paper: "#1C1C1C",
+              paper: "#1C1C1C", // not used as of now
             },
-            primary: {
+            primary: { // not used as of now
               light: "#c49d51",
               main: "#b88421",
               dark: "#9f6d0c",
             },
             secondary: {
-              light: "#FFBB37",
+              light: "#FFBB37", // not used as of now
               main: "#FFBB37",
-              dark: "#144e83",
+              dark: "#144e83", // not used as of now
             },
             text: {
               primary: "#ffffff",
               secondary: "#FFFFFF66",
-              disabled: "#ffffff",
+              disabled: "#ffffff", // not used as of now
             },
             accent: {
               primary: "#12E6C8",
@@ -251,6 +254,10 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
         fontFamily: '"Space Mono", monospace',
         fontSize: "0.7rem",
       },
+      body2: {
+        fontFamily: '"Inter", sans-serif',
+        fontSize: "0.7rem",
+      },
     },
     breakpoints: {
       values: {
@@ -281,8 +288,7 @@ const ThemeRegistery = ({ children }: ThemeRegisteryProps) => {
               "--mui-greyShade5": theme.palette.grey[500],
               "--mui-greyShade6": theme.palette.grey[600],
               "--mui-greyShade7": theme.palette.grey[700],
-              "--mui-greyShade8": theme.palette.grey[800],
-              "--mui-greyShade9": theme.palette.grey[900],
+              "--mui-textShade1": theme.palette.text.primary
             },
             body: {
               backgroundColor: "var(--mui-bg)",
